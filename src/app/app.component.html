@@ -1,0 +1,15 @@
+<div class="app-component app-theme" *ngIf="appActive">
+  <mat-sidenav-container>
+      <mat-sidenav class="side-nav" #sidenav>
+          MENU BAR
+      </mat-sidenav>
+             
+      <toolbar [sidenavRef]="sidenav"></toolbar>
+      <div class="container-fluid">
+          <alert class="alert-container"></alert>
+          <div class="router-container">
+              <router-outlet></router-outlet>
+          </div>
+      </div>
+  </mat-sidenav-container>
+</div>
